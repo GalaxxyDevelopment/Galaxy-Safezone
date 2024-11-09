@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="https://unpkg.com/alpinejs@3.10.4/dist/cdn.min.js"></script>
+    <script src="js/app.js" type="text/javascript"></script>
+    <title>endzone-</title>
+    <style>
+        ::-webkit-scrollbar {
+            display: none;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: transparent;
+            color: #ffffff;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        .content {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 350px;
+            height: 120px;
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 150px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+            border: 3px solid #86ff96;
+        }
+
+        .info-icon {
+            margin-right: 10px;
+        }
+
+        .main-text {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .mainTitle {
+        font-weight: bold;
+        font-size: 25px;
+        margin: 0;
+        color: #86ff96;
+        margin-left: 0px;
+}
+
+        .description {
+            font-weight: normal;
+            font-size: 14px;
+            padding: 7px;
+            margin: 7px;
+            color: #ffffff;
+        }
+
+        .discord-link {
+            font-weight: bold;
+            color: #86ff96;
+            font-size: 14px;
+            margin-left: 22px;
+
+        }
+    </style>
+</head>
+<body x-data="main()" x-init="listen()">
+    <div class="content" x-show="show" x-transition>
+        <div class="info-icon">
+            <img src="https://i.ibb.co/rfvYvjr/MRRP-Logo-Design-Arkaplansz.png" alt="MRRP Logo" style="width: 150px; height: 150px;">
+        </div>
+        <div class="main-text">
+            <h1 class="mainTitle">MRRP BİLGİ</h1>
+            <h2 class="description">
+            Kısayollar F3/F1/F4/F6/M <span class="discord-link">discord.gg/mrrp</span> <!-- "ㅤ" kullanılmak isterse boşluk harfi .gg/galaxydev -->
+            </h2>
+        </div>
+    </div>
+</body>
+</html>
